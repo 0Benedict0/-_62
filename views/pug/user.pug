@@ -1,0 +1,12 @@
+doctype html
+html(lang="uk")
+  head
+    title Деталі користувача
+    link(rel="stylesheet", href="/style.css")
+    link(rel="icon", href="/favicon.ico")
+  body(class=theme)
+    header Інформація про користувача
+    .container
+      h2 #{user.name}
+      p Email: #{user.email}
+      a(href="/users") ← Назад до списку

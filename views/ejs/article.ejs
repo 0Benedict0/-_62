@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <title><%= article.title %></title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body class="<%= theme %>">
+    <header><%= article.title %></header>
+    <div class="container">
+      <p><%= article.content %></p>
+      <a href="/articles">← Назад до списку</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <title>Статті</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" href="/favicon.ico" />
+  </head>
+  <body class="<%= theme %>">
+    <header>Список статей</header>
+    <div class="container">
+      <ul>
+        <% articles.forEach(article => { %>
+        <li><a href="/articles/<%= article.id %>"><%= article.title %></a></li>
+        <% }) %>
+      </ul>
+      <a href="/set-theme/light">Світла тема</a> |
+      <a href="/set-theme/dark">Темна тема</a>
+    </div>
+  </body>
+</html>

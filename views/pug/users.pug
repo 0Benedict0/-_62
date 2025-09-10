@@ -1,11 +1,15 @@
 doctype html
-html
+html(lang="uk")
   head
-    title= title
+    title Користувачі
     link(rel="stylesheet", href="/style.css")
     link(rel="icon", href="/favicon.ico")
   body(class=theme)
-    h1 User List
-    ul
-      each user in users
-        li: a(href=`/users/${user.id}`) #{user.name}
+    header Список користувачів
+    .container
+      ul
+        each user in users
+          li: a(href=`/users/${user.id}`) #{user.name} (#{user.email})
+      a(href="/set-theme/light") Світла тема
+      |  |  
+      a(href="/set-theme/dark") Темна тема
